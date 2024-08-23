@@ -1,0 +1,25 @@
+{
+  "genres": ["Action", "Comedy"],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Mad Max: Fury Road",
+      "genre": ["Action"]
+    },
+    {
+      "id": 2,
+      "title": "John Wick",
+      "genre": ["Action"]
+    },
+    {
+      "id": 3,
+      "title": "The Grand Budapest Hotel",
+      "genre": ["Comedy"]
+    },
+    {
+      "id": 4,
+      "title": "Superbad",
+      "genre": ["Comedy"]
+    }
+  ]
+}
