@@ -10,17 +10,23 @@ const typeDefs = gql`
   type Genre {
     id: ID
     name: String
-  }
+  } 
 
   type Query {
     getMovies: [Movie]
     getAllGenres: [Genre]
     getMovie(id: ID): Movie
   }
+  input createMovieInput {
+    title: String, genre: [ID]
+  },
 
+
+ 
   type Mutation {
     CreateGenre(name: String): Genre
-    CreateMovie(title: String, genre: [ID]): Movie
+    CreateMovie( input:createMovieInput): Movie
+    # CreateMovie( title: String, genre: [ID] ): Movie
     UpdateMovie(id: ID, title: String, genre: [ID]): Movie
     DeleteMovie(id: ID): Boolean
     DeleteMovieMany(id: [ID]): Boolean
